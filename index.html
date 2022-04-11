@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/30379922fe.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Tshirt Designer</h2>
+    </div>
+    <hr>
+    <div class="main">
+        <div class="shirts">
+
+            <div class="img_text">
+                <p class="text_img" id="text_Img">Enter The Text</p>
+            </div>
+            <img id="Shirt_image" class="images" src="images/black.png" alt="">
+
+        </div>
+        <div class="operations">
+
+            <div class="shirt_color">
+                <h3>Choose The Shirt Color</h3> <br>
+                <button style="background-color: black;" class="color_btns" id="black" onclick="check(id)"></button>
+                <button style="background-color: gray;" class="color_btns" id="gray" onclick="check(id)"></button>
+                <button style="background-color: purple;" class="color_btns" id="purple" onclick="check(id)"></button>
+                <button style="background-color: green;" class="color_btns" id="green" onclick="check(id)"></button>
+                <button style="background-color: yellow;" class="color_btns" id="yellow"
+                    onclick="check(id)"></span></button>
+
+            </div>
+
+            <div class="textbox">
+                <h3>Enter the text</h3>
+                <textarea class="text_Area" name="" oninput="text()" placeholder="Enter text here" id="Text_Text"
+                    cols="1" rows="4"></textarea><br>
+            </div>
+            <div class="Operation_box">
+                <input type="color" oninput="color()" id="favcolor" value="#ffffff" name="favcolor"
+                    class="upper-properties">
+                <button id="bold" onclick="bold()" class="operation_btn"><strong>B</strong></button>
+                <button id="italic" onclick="italic()" class="operation_btn"><em>I</em></button>
+                <button id="left" onclick="alignleft()" class="operation_btn"><i class="fas fa-align-left"></i></button>
+                <button id="center" onclick="aligncenter()" class="operation_btn"><i
+                        class="fas fa-align-center"></i></button>
+                <button id="right" onclick="alignright()" class="operation_btn"><i
+                        class="fas fa-align-right"></i></button>
+                <br>
+                <br>
+    
+                <div class="text-style-2">
+                    <div>
+                        <button id="minus" onclick="fontsize(id)" class="upper-properties operation_btn"><strong>-</strong></button>
+                        <input id="custom" onchange="fontsize(id)" type="text" maxlength="2" class="upper-properties operation_btn" style="text-align: center;" value="15" placeholder="px">
+                        <button id="plus" onclick="fontsize(id)" class="upper-properties operation_btn"><strong>+</strong></button>
+                    </div>
+                </div>
+
+                <!-- <button id="fontdown" onclick="sizedown()" class="operation_btn"><i>-</i></button> -->
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
